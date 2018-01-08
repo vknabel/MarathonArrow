@@ -7,7 +7,7 @@ struct MarathonArrow: Arrow {
     let run: String
     let cachePath: String?
 
-    public func fire(archerfile: Archerfile, arguments: [String]) throws {
+    public func fire(archerfile _: Archerfile, arguments: [String]) throws {
         try Marathon.run(
             with: ["marathon", "run", run] + arguments,
             folderPath: cachePath ?? ".archery/marathon",

@@ -1,0 +1,26 @@
+{% extends "BASE_README.md.stencil" %}
+
+{% block subtitle %}
+Run Swift scripts using Marathon.
+{% endblock %}
+
+{% block example %}
+```json
+{
+    "name": "SupercoolProject",
+    "version": "1.0.0",
+    "scripts": {
+        "release": {
+            "arrow": "{{github}}",
+            "run": "Scripts/ReleaseMyProjectArrow.swift"
+        }
+    }
+}
+```
+
+All parameters will be passed to your script.
+```bash
+$ archery release
+# Will run ReleaseMyProjectArrow.swift using Marathon
+```
+{% endblock %}
