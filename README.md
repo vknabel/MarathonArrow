@@ -1,5 +1,7 @@
 # 🏹 Marathon Arrow
 
+⚠️ **DEPRECATED:** The MarathonArrow is deprecated because [Marathon](https://github.com/JohnSundell/Marathon) is.
+
 
 Run Swift scripts using Marathon.
 For more information about Archery itself head to [vknabel/Archery](https://github.com/vknabel/Archery).
